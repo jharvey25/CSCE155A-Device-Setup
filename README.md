@@ -62,7 +62,8 @@ ls ............. list items in current directory
 pwd .......... print current (working) directory
 cd <name> ..................... change directory
 clear ....... clean up shell by "erasing" output
-touch <name> ....................... create file
+touch <name> ................ create file (Unix)
+New-Item <name> ....... create file (PowerShell)
 mkdir <name> .................. create directory
 rm <name>................. remove file/directory
 ```

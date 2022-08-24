@@ -72,11 +72,14 @@ Many of these these commands will need something called arguments, which let use
 
 
 ## Git/GitHub Basics
-TODO Give rundown of creating/cloning repos, pushing commits, viewing version history, etc.
+**TODO** Give rundown of creating/cloning repos, pushing commits, viewing version history, etc.
 
 
 ## CSE Server Access
-TODO Explain use of Secure Message Block, Virtual Private Network, Secure SHell, PuTTY, etc. for accessing files stored on cse server
+
+As a student of computer science at UNL, you have access to a space on the cse server. The cse server currently runs a UNIX environment where students have access to various features, including program compilers, text editors, and a public HTML web page to name a few. If you continue as a student, you will find more useful feature. It is important to note: **You cannot break the cse server** no matter how hard you try. You are limited on personal space, but have complete freedom otherwise and can only do harm to your own files. The FAQ for the school of computing is here -> https://computing.unl.edu/faq/ . You can find help with the cse server there.
+
+**TODO** Explain use of Secure Message Block, Virtual Private Network, Secure SHell, PuTTY, etc. for accessing files stored on cse server
 
 ### Secure SHell
 `ssh` is a command that can be used in most terminals (macOS/unix = yes, Windows = hopefully, if not skip ahead to PuTTY). It allows the user to access remote servers and computer in a secure way, and can be used to access the cse server. First:

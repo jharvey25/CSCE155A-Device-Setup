@@ -77,3 +77,19 @@ TODO Give rundown of creating/cloning repos, pushing commits, viewing version hi
 
 ## CSE Server Access
 TODO Explain use of Secure Message Block, Virtual Private Network, Secure SHell, PuTTY, etc. for accessing files stored on cse server
+
+### Secure SHell
+`ssh` is a command that can be used in most terminals (macOS/unix = yes, Windows = hopefully, if not skip ahead to PuTTY). It allows the user to access remote servers and computer in a secure way, and can be used to access the cse server. First:
+1. Open a terminal
+2. type `ssh [Your username here]@cse.unl.edu`
+3. You will then be asked to except keys. Type `yes` and press enter
+4. You should now be logged in to cse!
+!ssh Example(https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/sshLogin.PNG?raw=true)
+From here you have access to your home directory in a unix environment. You can also run python from here if you wish.
+
+### PuTTY for Windows
+PuTTY is a program that allows ssh access in an easy to use GUI (Graphical User Interface). PuTTY can be downloaded from here -> https://www.putty.org/ . Click the download PuTTY link and select the putty-64bit-0.77-installer.msi link. For the most part, this should be the correct download for everyone using Windows.
+
+Using PuTTY is simple. In the host name box, type in `cse.unl.edu`. Set the port to `22` and press open. You will be prompted for your login.
+!PuTTY GUI(https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/PuTTY.PNG?raw=true)
+!PuTTY Login(https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/PuTTYLogin.PNG?raw=true)

@@ -77,25 +77,50 @@ Many of these these commands will need something called arguments, which let use
 
 ## CSE Server Access
 
-As a student of computer science at UNL, you have access to a space on the cse server. The cse server currently runs a UNIX environment where students have access to various features, including program compilers, text editors, and a public HTML web page to name a few. If you continue as a student, you will find more useful feature. It is important to note: **You cannot break the cse server** no matter how hard you try. You are limited on personal space, but have complete freedom otherwise and can only do harm to your own files. The FAQ for the school of computing is here -> https://computing.unl.edu/faq/ . You can find help with the cse server there.
+As a student of computer science at UNL, you have access to a space on the CSE server. The CSE server currently runs a UNIX environment where students have access to various features, including program compilers, text editors, and a public HTML web page to name a few. If you continue as a student, you will find more useful feature. It is important to note: **You cannot break the CSE server** no matter how hard you try. You are limited on personal space, but have complete freedom otherwise and can only do harm to your own files. The FAQ for the school of computing is here -> https://computing.unl.edu/faq/ . You can find help with the CSE server there.
 
-**TODO** Explain use of Secure Message Block, Virtual Private Network, Secure SHell, PuTTY, etc. for accessing files stored on cse server
+**TODO** Explain use of Secure Message Block, Virtual Private Network, etc. for accessing files stored on CSE server
 
 ### Secure SHell
-`ssh` is a command that can be used in most terminals (macOS/unix = yes, Windows = hopefully, if not skip ahead to PuTTY). It allows the user to access remote servers and computer in a secure way, and can be used to access the cse server. First:
+`ssh` is a command that can be used in most terminals (macOS/UNIX = yes, Windows = hopefully, if not skip ahead to PuTTY). It allows the user to access remote servers and computer in a secure way, and can be used to access the CSE server. First:
 1. Open a terminal
 2. type `ssh [Your username here]@cse.unl.edu`
 3. You will then be asked to except keys. Type `yes` and press enter
-4. You should now be logged in to cse!
+4. You should now be logged in to CSE!
 
 ![ssh Example](https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/sshLogin.PNG?raw=true)
 
-From here you have access to your home directory in a unix environment. You can also run python from here if you wish.
+From here you have access to your home directory in a UNIX environment. You can also run python from here if you wish.
 
-### PuTTY for Windows
-PuTTY is a program that allows ssh access in an easy to use GUI (Graphical User Interface). PuTTY can be downloaded from here -> https://www.putty.org/ . Click the download PuTTY link and select the putty-64bit-0.77-installer.msi link. For the most part, this should be the correct download for everyone using Windows.
+### PuTTY for Windows Users
+PuTTY is a program that allows ssh access in an easy to use GUI (Graphical User Interface). PuTTY can be downloaded from here -> https://www.putty.org/ . Click the download PuTTY link and select the putty-64bit-0.77-installer.msi link and install. For the most part, this should be the correct download for everyone using Windows.
 
 Using PuTTY is simple. In the host name box, type in `cse.unl.edu`. Set the port to `22` and press open. You will be prompted for your login.
 
 ![PuTTY GUI](https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/PuTTY.PNG?raw=true)
 ![PuTTY Login](https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/PuTTYLogin.PNG?raw=true)
+
+You are now in the CSE server. But, in order to upload files to canvas, you will need another tool...
+
+## CSE Server File Access
+
+### Secure CoPy
+`scp` is a command that can be used in most terminals (macOS/UNIX = yes, Windows = hopefully, if not skip ahead to winSCP). `scp` needs you to specify a source and a destination. The basic syntax that you will use is `scp [your username here]@cse.unl.edu:[path to file that you want to copy here] [path to the place you want to put the file on your machine]`
+
+![scp Example](https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/scp.PNG?raw=true)
+
+The file should appear at the path that you specified.
+
+###WinSCP for Windows Users
+
+WinSCP is a program that allows scp access in an easy to use GUI. WinSCP can be downloaded from here -> https://winscp.net/eng/download.php . Click the Download WinSCP button and install.
+
+When you open the program, you will be prompted with a popup to select the host and user. Make sure the file protocol is set to SFTP, and enter the host as `cse.unl.edu`, the user as your username, and the password as your password. Verify that the port is set to `22` and click login.
+
+![WinSCP Login](https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/winSCPLoginPrompt.PNG?raw=true)
+
+You will then gain access to a file explorer where you can select the file you want, and drag it to the location that you want on your machine.
+
+![WinSCP Drag](https://github.com/jharvey25/CSCE155A-Device-Setup/blob/main/img/winSCPDrag.PNG?raw=true)
+
+Your file has been transferred and you can now upload it to canvas so that it can be graded.

@@ -40,50 +40,50 @@ below.
   1. While focused in your terminal app, you should see a prompt with a blinking
   cursor. This is where you can enter commands and use tools like SSH.
 
-  ```
-    Last login: Tue Jul  3 20:59:45 on ttys000
-    local-prompt>
-  ```
+     ```
+     Last login: Tue Jul  3 20:59:45 on ttys000
+     local-prompt>
+     ```
 
   2. To log in to the CSE server, type `ssh [login ID]@cse.unl.edu` where
   `[login ID]` is replaced with the login ID of your CSE account.
   In this example, my login ID is 'jsmith'. Enter this command and you should
-  see a prompt for your password.  
+  see a prompt for your password. 
 
-   **NOTE:** You will likely receive a prompt saying that the authenticity of
-  host 'cse.unl.edu' can't be established if this is your first time
-  connecting to the CSE server through SSH. Enter `yes` to reach the password
-  prompt as shown below.
+     **NOTE:** You will likely receive a prompt saying that the authenticity of
+    host 'cse.unl.edu' can't be established if this is your first time
+    connecting to the CSE server through SSH. Enter `yes` to reach the password
+    prompt as shown below.
 
-  ```
-    local-prompt> ssh jsmith@cse.unl.edu
-    The authenticity of host 'cse.unl.edu (10.211.11.120)' can't be established.
-    RSA key fingerprint is 3f:1b:f4:bd:c5:aa:c1:1f:bf:4e:2e:cf:53:fa:d8:59.
-    Are you sure you want to continue connecting (yes/no)? yes
-    (jsmith@cse.unl.edu) Password:
-  ```
+     ```
+     local-prompt> ssh jsmith@cse.unl.edu
+     The authenticity of host 'cse.unl.edu (10.211.11.120)' can't be established.
+     RSA key fingerprint is 3f:1b:f4:bd:c5:aa:c1:1f:bf:4e:2e:cf:53:fa:d8:59.
+     Are you sure you want to continue connecting (yes/no)? yes
+     (jsmith@cse.unl.edu) Password:
+     ```
 
   3. Type the password for your CSE account into the prompt. You will not see
   anything actually being typed as you do this, this is a security measure just
   like the dots that pop up when you log in to a website.
 
-  If you entered the correct password, you should see a lovely header welcoming
-  you to the CSE server!
+     If you entered the correct password, you should see a lovely header welcoming
+    you to the CSE server!
 
-    ```
-      Last login: Tue Jul  3 11:05:12 2019 from 101.231.303.416
-      ******************************************************************************
-                                     Welcome to CSE
-      ******************************************************************************
+     ```
+     Last login: Tue Jul  3 11:05:12 2019 from 101.231.303.416
+     ******************************************************************************
+                                    Welcome to CSE
+     ******************************************************************************
 
-      The operating system on this computer was upgraded on March 18, 2018.
+     The operating system on this computer was upgraded on March 18, 2018.
 
-      Please contact "manager@cse.unl.edu" to report problems, request software
-      or ask questions about this system.
+     Please contact "manager@cse.unl.edu" to report problems, request software
+     or ask questions about this system.
 
-      ******************************************************************************
-      cse.unl.edu-prompt>
-    ```
+     ******************************************************************************
+     cse.unl.edu-prompt>
+     ```
 
   4. At this point, you have successfully used SSH to log into the CSE server
   and can view the files and directories you have stored there. Keep in mind,
@@ -105,8 +105,9 @@ Remote to local would copy from the server to your machine. Local to remote
 would copy from your machine to the server.  
 
 Both scenarios involve arguments for SCP that look very similar, so be wary. The
-simplest way to remember the command is as `scp [source] [target]`. Guides for
-either case can be found below.
+simplest way to remember the command is as 
+`scp [source] [target]`. 
+Guides for either case can be found below.
 
 <details>
   <summary>Click here for a guide on remote to local SCP in Windows and macOS</summary>
@@ -114,53 +115,53 @@ either case can be found below.
   1. While focused in your terminal app, you should see a prompt with a blinking
   cursor. This is where you can enter commands and use tools like SCP.  
 
-   **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
-  currently logged in to the CSE server via Secure Shell (SSH). Make sure you
-  are logged out of the server at this point.
+     **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
+    currently logged in to the CSE server via Secure Shell (SSH). Make sure you
+    are logged out of the server at this point.
 
-  ```
-    Last login: Tue Jul  3 20:59:45 on ttys000
-    local-prompt>
-  ```
+     ```
+     Last login: Tue Jul  3 20:59:45 on ttys000
+     local-prompt>
+     ```
 
-  2. To copy a file stored on the CSE server to your own machine, type `scp
-  [login ID]@cse.unl.edu:[remote filepath] [local filepath]`, where `[login ID]`
-  is replaced with the login ID of your CSE account. In this example, my login
-  ID is 'jsmith'.  
+  2. To copy a file stored on the CSE server to your own machine, type 
+  `scp [login ID]@cse.unl.edu:[remote filepath] [local filepath]`, 
+  where `[login ID]` is replaced with the login ID of your CSE account. In this 
+  example, my login ID is 'jsmith'.  
 
-  `[remote filepath]` is the location on the server of the file you'd like to
-  copy. A Unix shortcut for home directory is `~`. In this example, I am copying
-  a text file called 'my_file.txt' which is stored in a folder on my server
-  account called 'my_directory'.
+     `[remote filepath]` is the location on the server of the file you'd like to
+    copy. A Unix shortcut for home directory is `~`. In this example, I am copying
+    a text file called 'my_file.txt' which is stored in a folder on my server
+    account called 'my_directory'.
 
-  `[local filepath]` is the location on your machine you'd like to copy *to*. In
-  this example, I am copying that text file to a folder in my home directory
-  called 'Desktop'.
+     `[local filepath]` is the location on your machine you'd like to copy *to*. In
+    this example, I am copying that text file to a folder in my home directory
+    called 'Desktop'.
 
-  If filepaths and command arguments are confusing, please review the `Unix
-  Basics` section of this page or reach out to a TA. Enter this command and you
-  should see a prompt for your password.  
+     If filepaths and command arguments are confusing, please review the `Unix Basics` 
+    section of this page or reach out to a TA. Enter this command and you
+    should see a prompt for your password.  
 
-   **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
-  that has the exact same filename as your source. Unix is powerful but make
-  sure you know what will happen before executing a command.
+     **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
+    that has the exact same filename as your source. Unix is powerful but make
+    sure you know what will happen before executing a command.
 
-  ```
-    local-prompt> scp jsmith@cse.unl.edu:~/my_directory/my_file.txt ~/Desktop/
-    (jsmith@cse.unl.edu) Password:
-  ```
+     ```
+     local-prompt> scp jsmith@cse.unl.edu:~/my_directory/my_file.txt ~/Desktop/
+     (jsmith@cse.unl.edu) Password:
+     ```
 
   3. Type the password for your CSE account into the prompt. You will not see
   anything actually being typed as you do this, this is a security measure just
   like the dots that pop up when you log in to a website.
 
-  If you entered the correct password and filepaths, you should see a new line
-  in your terminal indicating the status of your desired file.
+     If you entered the correct password and filepaths, you should see a new line
+    in your terminal indicating the status of your desired file.
 
-  ```
-    my_file.txt                                 100%    0     0.0KB/s   00:00    
-    local-prompt>
-  ```
+     ```
+     my_file.txt                                    100%    0     0.0KB/s   00:00    
+     local-prompt>
+     ```
 
   4. Once the percentage reaches 100%, you have successfully copied a file from
   the CSE server to your own machine! You can find this copy in the location you
@@ -174,53 +175,53 @@ either case can be found below.
   1. While focused in your terminal app, you should see a prompt with a blinking
   cursor. This is where you can enter commands and use tools like SCP.  
 
-   **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
-  currently logged in to the CSE server via Secure Shell (SSH).  Make sure you
-  are logged out of the server at this point.
+     **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
+    currently logged in to the CSE server via Secure Shell (SSH).  Make sure you
+    are logged out of the server at this point.
 
-  ```
-    Last login: Tue Jul  3 20:59:45 on ttys000
-    local-prompt>
-  ```
+     ```
+     Last login: Tue Jul  3 20:59:45 on ttys000
+     local-prompt>
+     ```
 
-  2. To copy a file stored on your own machine to the CSE server, type `scp
-  [local filepath] [login ID]@cse.unl.edu:[remote filepath]`, where `[login ID]`
-  is replaced with the login ID of your CSE account. In this example, my login
-  ID is 'jsmith'.  
+  2. To copy a file stored on your own machine to the CSE server, type 
+  `scp [local filepath] [login ID]@cse.unl.edu:[remote filepath]`, 
+  where `[login ID]` is replaced with the login ID of your CSE account. In this 
+  example, my login ID is 'jsmith'.  
 
-  `[local filepath]` is the location on your machine of the file you'd like to
-  copy. A Unix shortcut for home directory is `~`. In this example, I am copying
-  a text file called 'my_file.txt' which is stored in a folder in my home
-  directory called 'Desktop'.
+     `[local filepath]` is the location on your machine of the file you'd like to
+    copy. A Unix shortcut for home directory is `~`. In this example, I am copying
+    a text file called 'my_file.txt' which is stored in a folder in my home
+    directory called 'Desktop'.
 
-  `[remote filepath]` is the location on the server you'd like to copy *to*. In
-  this example, I am copying that text file to a folder on my server account
-  called 'my_directory'.
+     `[remote filepath]` is the location on the server you'd like to copy *to*. In
+    this example, I am copying that text file to a folder on my server account
+    called 'my_directory'.
 
-  If filepaths and command arguments are confusing, please review the `Unix
-  Basics` section of this page or reach out to a TA. Enter this command and you
-  should see a prompt for your password.  
+     If filepaths and command arguments are confusing, please review the `Unix Basics` 
+    section of this page or reach out to a TA. Enter this command and you
+    should see a prompt for your password.  
 
-   **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
-  that has the exact same filename as your source. Unix is powerful but make
-  sure you know what will happen before executing a command.
+     **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
+    that has the exact same filename as your source. Unix is powerful but make
+    sure you know what will happen before executing a command.
 
-  ```
-    local-prompt> scp ~/Desktop/my_file.txt jsmith@cse.unl.edu:~/my_directory/
-    (jsmith@cse.unl.edu) Password:
-  ```
+     ```
+     local-prompt> scp ~/Desktop/my_file.txt jsmith@cse.unl.edu:~/my_directory/
+     (jsmith@cse.unl.edu) Password:
+     ```
 
   3. Type the password for your CSE account into the prompt. You will not see
   anything actually being typed as you do this, this is a security measure just
   like the dots that pop up when you log in to a website.
 
-  If you entered the correct password and filepaths, you should see a new line
-  in your terminal indicating the status of your desired file.
+     If you entered the correct password and filepaths, you should see a new line
+    in your terminal indicating the status of your desired file.
 
-  ```
-    my_file.txt                                 100%    0     0.0KB/s   00:00    
-    local-prompt>
-  ```
+     ```
+     my_file.txt                                    100%    0     0.0KB/s   00:00    
+     local-prompt>
+     ```
 
   4. Once the percentage reaches 100%, you have successfully copied a file from
   your own machine to the CSE server! You can find this copy in the location you

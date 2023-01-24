@@ -50,10 +50,10 @@ below.
   In this example, my login ID is 'jsmith'. Enter this command and you should
   see a prompt for your password.  
 
-    **NOTE:** You will likely receive a prompt saying that the authenticity of
-    host 'cse.unl.edu' can't be established if this is your first time
-    connecting to the CSE server through SSH. Enter `yes` to reach the password
-    prompt as shown below.
+   **NOTE:** You will likely receive a prompt saying that the authenticity of
+  host 'cse.unl.edu' can't be established if this is your first time
+  connecting to the CSE server through SSH. Enter `yes` to reach the password
+  prompt as shown below.
 
   ```
     local-prompt> ssh jsmith@cse.unl.edu
@@ -114,9 +114,9 @@ either case can be found below.
   1. While focused in your terminal app, you should see a prompt with a blinking
   cursor. This is where you can enter commands and use tools like SCP.  
 
-    **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
-    currently logged in to the CSE server via Secure Shell (SSH). Make sure you
-    are logged out of the server at this point.
+   **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
+  currently logged in to the CSE server via Secure Shell (SSH). Make sure you
+  are logged out of the server at this point.
 
   ```
     Last login: Tue Jul  3 20:59:45 on ttys000
@@ -141,9 +141,9 @@ either case can be found below.
   Basics` section of this page or reach out to a TA. Enter this command and you
   should see a prompt for your password.  
 
-    **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
-    that has the exact same filename as your source. Unix is powerful but make
-    sure you know what will happen before executing a command.
+   **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
+  that has the exact same filename as your source. Unix is powerful but make
+  sure you know what will happen before executing a command.
 
   ```
     local-prompt> scp jsmith@cse.unl.edu:~/my_directory/my_file.txt ~/Desktop/
@@ -174,9 +174,9 @@ either case can be found below.
   1. While focused in your terminal app, you should see a prompt with a blinking
   cursor. This is where you can enter commands and use tools like SCP.  
 
-    **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
-    currently logged in to the CSE server via Secure Shell (SSH).  Make sure you
-    are logged out of the server at this point.
+   **NOTE:** Notice the prompt below is `local-prompt`, meaning that we are not
+  currently logged in to the CSE server via Secure Shell (SSH).  Make sure you
+  are logged out of the server at this point.
 
   ```
     Last login: Tue Jul  3 20:59:45 on ttys000
@@ -201,9 +201,9 @@ either case can be found below.
   Basics` section of this page or reach out to a TA. Enter this command and you
   should see a prompt for your password.  
 
-    **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
-    that has the exact same filename as your source. Unix is powerful but make
-    sure you know what will happen before executing a command.
+   **NOTE:** SCP will *mercilessly* overwrite any file stored at your target
+  that has the exact same filename as your source. Unix is powerful but make
+  sure you know what will happen before executing a command.
 
   ```
     local-prompt> scp ~/Desktop/my_file.txt jsmith@cse.unl.edu:~/my_directory/

@@ -69,6 +69,11 @@ below.
 
      If you entered the correct password, you should see a lovely header welcoming
     you to the CSE server!
+  
+     **NOTE:** If you see a prompt for a verification code, you did not use the 
+    correct login ID. Visit the CSE Account Information Portal 
+    [linked here](https://cse-apps.unl.edu/amu/login) 
+    to check your login ID.
 
      ```
      Last login: Tue Jul  3 11:05:12 2019 from 101.231.303.416
